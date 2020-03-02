@@ -10,8 +10,6 @@ import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { ROUTES } from './app.routes';
 
-// Rutas
-import {} from './app.routes'
 @NgModule({
   declarations: [
     AppComponent,
