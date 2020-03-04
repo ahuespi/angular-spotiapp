@@ -14,10 +14,8 @@ export class HomeComponent implements OnInit {
     private http: HttpClient,
     private spotify:SpotifyService
   ) { 
-    this.spotify.getNewReleases().subscribe(res => {
-      
-      this.newSongs = res.albums.items
-      console.log(this.newSongs)
+    this.spotify.getNewReleases().subscribe((res:any) => {
+      this.newSongs = res;
     })
   }
 
